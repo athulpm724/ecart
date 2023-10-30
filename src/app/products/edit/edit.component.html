@@ -1,0 +1,59 @@
+<form (ngSubmit)="update()">
+    <!-- id -->
+    <div class="form-group">
+        <label for="exampleInputEmail1">ID</label>
+        <input [(ngModel)]="pdata.id" name="id" type="text" class="form-control">
+    </div>
+    
+    <!-- name -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">product name</label>
+        <input [(ngModel)]="pdata.productName" name="producName" type="text" class="form-control">
+    </div>
+    
+    <!-- desc -->
+    <div class="form-check">
+        <label  class="form-check-label" for="exampleCheck1">Description</label>
+        <input [(ngModel)]="pdata.description" name="description" type="text" class="form-control">
+        
+    </div>
+    
+    <!-- price -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Price</label>
+        <input  [(ngModel)]="pdata.price" name="price" type="text" class="form-control">
+    </div>
+    
+    <!-- rating -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Rating</label>
+        <input [(ngModel)]="pdata.rating" name="rating" type="text" class="form-control" >
+        
+    </div>
+   
+    <!-- image -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Image</label>
+        <input [(ngModel)]="pdata.image" name="image" type="text" class="form-control" >
+    </div>
+   
+    <!-- is avail -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">availability</label>
+        <input  [(ngModel)]="pdata.is_available" name="is_available" type="text" class="form-control">
+    </div>
+   
+     <!-- age -->
+     <div class="form-group">
+        <label for="exampleInputPassword1">age</label>
+        <input [(ngModel)]="pdata.age" name="age" type="text" class="form-control">
+    </div>
+    
+     <!-- review -->
+     <div class="form-group">
+        <label for="exampleInputPassword1">reviews</label>
+        <input  [(ngModel)]="pdata.review" name="review" type="text" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

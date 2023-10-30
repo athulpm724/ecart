@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Bengal Cat",
+      "categoryId":3,
+      "description":"rare breed",
+      "price":80000,
+      "image":"https://images.unsplash.com/photo-1598463166228-c0f90d180918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80",
+      "rating":4.5,
+      "review":23,
+      "age":2,
+      "is_available":true
+    },
+    {
+      "id": 2,
+      "productName": "persian Cat",
+      "categoryId":2,
+      "description":"persian breed",
+      "price":5000,
+      "image":"https://images.unsplash.com/photo-1591429939960-b7d5add10b5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80",
+      "rating":3.5,
+      "review":13,
+      "age":1,
+      "is_available":true
+    },
+    {
+      "id": 3,
+      "productName": "Birman",
+      "categoryId":3,
+      "description":"hmmmmmmm",
+      "price":9600,
+      "image":"https://images.unsplash.com/photo-1622177577032-326d38124646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80",
+      "rating":2.5,
+      "review":3,
+      "age":4,
+      "is_available":true
+    },
+    {
+      "id": 4,
+      "productName": "Bombay Cat",
+      "categoryId":3,
+      "description":"desi",
+      "price":4600,
+      "image":"https://images.unsplash.com/photo-1680194074284-cdebb2f8a193?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "rating":5.5,
+      "review":33,
+      "age":2,
+      "is_available":true
+    }
+    
+  ]
+}

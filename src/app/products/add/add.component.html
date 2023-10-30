@@ -1,0 +1,76 @@
+<form [formGroup]="addFormModel" (ngSubmit)="addNewProduct()">
+    <!-- id -->
+    <div class="form-group">
+        <label for="exampleInputEmail1">ID</label>
+        <input formControlName="id" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('id')?.errors&&this.addFormModel.get('id')?.touched">
+        <p class="text-danger">invalid id</p>
+    </div>
+    <!-- name -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">product name</label>
+        <input formControlName="productName" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('pname')?.errors&&this.addFormModel.get('pname')?.touched">
+        <p class="text-danger">invalid name</p>
+    </div>
+    <!-- desc -->
+    <div class="form-check">
+        <input formControlName="description" type="text" class="form-check-input">
+        <label class="form-check-label" for="exampleCheck1">Description</label>
+    </div>
+    <div *ngIf="this.addFormModel.get('desc')?.errors&&this.addFormModel.get('desc')?.touched">
+        <p class="text-danger">invalid description</p>
+    </div>
+    <!-- price -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Price</label>
+        <input  formControlName="price" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('price')?.errors&&this.addFormModel.get('price')?.touched">
+        <p class="text-danger">invalid price</p>
+    </div>
+    <!-- rating -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Rating</label>
+        <input formControlName="rating" type="text" class="form-control" >
+        
+    </div>
+    <div *ngIf="this.addFormModel.get('rating')?.errors&&this.addFormModel.get('rating')?.touched">
+        <p class="text-danger">invalid rating</p>
+    </div>
+    <!-- image -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">Image</label>
+        <input formControlName="image" type="text" class="form-control" >
+    </div>
+    <div *ngIf="this.addFormModel.get('image')?.errors&&this.addFormModel.get('image')?.touched">
+        <p class="text-danger">invalid image url</p>
+    </div>
+    <!-- is avail -->
+    <div class="form-group">
+        <label for="exampleInputPassword1">availability</label>
+        <input  formControlName="is_available" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('is_available')?.errors&&this.addFormModel.get('is_available')?.touched">
+        <p class="text-danger">invalid</p>
+    </div>
+     <!-- age -->
+     <div class="form-group">
+        <label for="exampleInputPassword1">age</label>
+        <input  formControlName="age" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('age')?.errors&&this.addFormModel.get('age')?.touched">
+        <p class="text-danger">invalid age</p>
+    </div>
+     <!-- review -->
+     <div class="form-group">
+        <label for="exampleInputPassword1">reviews</label>
+        <input  formControlName="review" type="text" class="form-control">
+    </div>
+    <div *ngIf="this.addFormModel.get('review')?.errors&&this.addFormModel.get('review')?.touched">
+        <p class="text-danger">invalid review count</p>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
